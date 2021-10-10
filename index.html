@@ -19,146 +19,141 @@
         <a href="#Routers" class="nav-link">Routers</a>
       </nav>
 
-      <div class="content">
-        <main id="main-doc">
-          <section class="main-section" id="Introduction">
-            <header>Introduction</header>
-            <p>
-              Technical documentation refers to any document that explains the
-              use, functionality, creation, or architecture of a product. Think
-              of it as a nuts-and-bolts “how to” guide for your users, new
-              hires, administrators, and anyone else who needs to know how your
-              product works.
-            </p>
-            <p>
-              Technical documentation isn’t just about capturing information.
-              It’s about presenting it in a way that’s easy to read, usable, and
-              actually helpful for your audience. So if you don’t know where to
-              start, here’s our short guide to making technical documentation
-              that’s actually helpful.
-            </p>
-          </section>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <p>
+            Technical documentation refers to any document that explains the
+            use, functionality, creation, or architecture of a product. Think of
+            it as a nuts-and-bolts “how to” guide for your users, new hires,
+            administrators, and anyone else who needs to know how your product
+            works.
+          </p>
+          <p>
+            Technical documentation isn’t just about capturing information. It’s
+            about presenting it in a way that’s easy to read, usable, and
+            actually helpful for your audience. So if you don’t know where to
+            start, here’s our short guide to making technical documentation
+            that’s actually helpful.
+          </p>
+        </section>
+        <br />
+        <section class="main-section" id="JavaScript">
+          <header>JavaScript</header>
+          <p>
+            JavaScript (often shortened to JS) is a lightweight, interpreted,
+            object-oriented language with first-class functions, and is best
+            known as the scripting language for Web pages, but it's used in many
+            non-browser environments as well. It is a prototype-based,
+            multi-paradigm scripting language that is dynamic, and supports
+            object-oriented, imperative, and functional programming styles.
+          </p>
+          <p>
+            JavaScript runs on the client side of the web, which can be used to
+            design / program how the web pages behave on the occurrence of an
+            event. JavaScript is an easy to learn and also powerful scripting
+            language, widely used for controlling web page behavior.
+          </p>
+          <code
+            >const myHeading = document.querySelector('h1');
+            myHeading.textContent = 'Hello world!';</code
+          >
+          <ul>
+            <li>Variables</li>
+            <li>Functions</li>
+            <li>Arrays</li>
+            <li>Objects</li>
+            <li>Control Flow</li>
+          </ul>
+          <p></p>
+        </section>
+        <br />
+        <section class="main-section" id="Overview">
+          <header>Overview</header>
+          <p>
+            JavaScript is a scripting or programming language that allows you to
+            implement complex features on web pages — every time a web page does
+            more than just sit there and display static information for you to
+            look at — displaying timely content updates, interactive maps,
+            animated 2D/3D graphics, scrolling video jukeboxes, etc. — you can
+            bet that JavaScript is probably involved. It is the third layer of
+            the layer cake of standard web technologies, two of which (HTML and
+            CSS) we have covered in much more detail in other parts of the
+            Learning Area.
+          </p>
+          <code>let myVariable = 'Bob'; myVariable = 'Steve';</code>
+          <p></p>
+        </section>
+        <br />
+        <section class="main-section" id="React">
+          <header>React</header>
+          <p>
+            React is a declarative, efficient, and flexible JavaScript library
+            for building user interfaces. It lets you compose complex UIs from
+            small and isolated pieces of code called “components”. React has a
+            few different kinds of components, but we’ll start with
+            React.Component subclasses:
+          </p>
+          <code
+            >ReactDOM.render(
+            <h4>Hello, world!</h4>
+            , document.getElementById('root') );</code
+          >
           <br />
-          <section class="main-section" id="JavaScript">
-            <header>JavaScript</header>
-            <p>
-              JavaScript (often shortened to JS) is a lightweight, interpreted,
-              object-oriented language with first-class functions, and is best
-              known as the scripting language for Web pages, but it's used in
-              many non-browser environments as well. It is a prototype-based,
-              multi-paradigm scripting language that is dynamic, and supports
-              object-oriented, imperative, and functional programming styles.
-            </p>
-            <p>
-              JavaScript runs on the client side of the web, which can be used
-              to design / program how the web pages behave on the occurrence of
-              an event. JavaScript is an easy to learn and also powerful
-              scripting language, widely used for controlling web page behavior.
-            </p>
-            <code
-              >const myHeading = document.querySelector('h1');
-              myHeading.textContent = 'Hello world!';</code
-            >
-            <ul>
-              <li>Variables</li>
-              <li>Functions</li>
-              <li>Arrays</li>
-              <li>Objects</li>
-              <li>Control Flow</li>
-            </ul>
-            <p></p>
-          </section>
+          <code>const user = { firstName: 'Harper', lastName: 'Perez' };</code>
+          <p></p>
+        </section>
+        <br />
+        <section class="main-section" id="Components">
+          <header>Components</header>
+          <p>
+            Components are independent and reusable bits of code. They serve the
+            same purpose as JavaScript functions, but work in isolation and
+            return HTML. Components come in two types, Class components and
+            Function components
+          </p>
+          <code
+            >function Welcome(props) { return
+            <h4>Hello, {props.name}</h4>
+            ; }</code
+          >
+          <p></p>
+        </section>
+        <br />
+        <section class="main-section" id="State">
+          <header>State</header>
+          <p>
+            State management is simply a way to engender communication and
+            sharing of data across components. It creates a concrete data
+            structure to represent your app's State that you can read and write.
+            ... When a user performs an action in a typical React app, changes
+            occur in the component's state
+          </p>
+          <code
+            >constructor(props) { super(props); this.state = {date: new Date()};
+            }</code
+          >
           <br />
-          <section class="main-section" id="Overview">
-            <header>Overview</header>
-            <p>
-              JavaScript is a scripting or programming language that allows you
-              to implement complex features on web pages — every time a web page
-              does more than just sit there and display static information for
-              you to look at — displaying timely content updates, interactive
-              maps, animated 2D/3D graphics, scrolling video jukeboxes, etc. —
-              you can bet that JavaScript is probably involved. It is the third
-              layer of the layer cake of standard web technologies, two of which
-              (HTML and CSS) we have covered in much more detail in other parts
-              of the Learning Area.
-            </p>
-            <code>let myVariable = 'Bob'; myVariable = 'Steve';</code>
-            <p></p>
-          </section>
-          <br />
-          <section class="main-section" id="React">
-            <header>React</header>
-            <p>
-              React is a declarative, efficient, and flexible JavaScript library
-              for building user interfaces. It lets you compose complex UIs from
-              small and isolated pieces of code called “components”. React has a
-              few different kinds of components, but we’ll start with
-              React.Component subclasses:
-            </p>
-            <code
-              >ReactDOM.render(
-              <h4>Hello, world!</h4>
-              , document.getElementById('root') );</code
-            >
-            <br />
-            <code
-              >const user = { firstName: 'Harper', lastName: 'Perez' };</code
-            >
-            <p></p>
-          </section>
-          <br />
-          <section class="main-section" id="Components">
-            <header>Components</header>
-            <p>
-              Components are independent and reusable bits of code. They serve
-              the same purpose as JavaScript functions, but work in isolation
-              and return HTML. Components come in two types, Class components
-              and Function components
-            </p>
-            <code
-              >function Welcome(props) { return
-              <h4>Hello, {props.name}</h4>
-              ; }</code
-            >
-            <p></p>
-          </section>
-          <br />
-          <section class="main-section" id="State">
-            <header>State</header>
-            <p>
-              State management is simply a way to engender communication and
-              sharing of data across components. It creates a concrete data
-              structure to represent your app's State that you can read and
-              write. ... When a user performs an action in a typical React app,
-              changes occur in the component's state
-            </p>
-            <code
-              >constructor(props) { super(props); this.state = {date: new
-              Date()}; }</code
-            >
-            <br />
-            <code>this.state = {date: new Date()};</code>
-            <p></p>
-          </section>
-          <br />
-          <section class="main-section" id="Routers">
-            <header>Routers</header>
-            <p>
-              React Router is a collection of navigational components that
-              compose declaratively with your application. Whether you want to
-              have bookmarkable URLs for your web app or a composable way to
-              navigate in React Native, React Router works wherever React is
-              rendering
-            </p>
-            <code>
-              import { BrowserRouter as Router, Switch, Route, Link } from
-              "react-router-dom";</code
-            >
-            <p></p>
-          </section>
-          <br />
-        </main>
-      </div>
+          <code>this.state = {date: new Date()};</code>
+          <p></p>
+        </section>
+        <br />
+        <section class="main-section" id="Routers">
+          <header>Routers</header>
+          <p>
+            React Router is a collection of navigational components that compose
+            declaratively with your application. Whether you want to have
+            bookmarkable URLs for your web app or a composable way to navigate
+            in React Native, React Router works wherever React is rendering
+          </p>
+          <code>
+            import { BrowserRouter as Router, Switch, Route, Link } from
+            "react-router-dom";</code
+          >
+          <p></p>
+        </section>
+        <br />
+      </main>
     </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
   </body>

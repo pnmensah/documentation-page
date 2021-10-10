@@ -2,7 +2,6 @@ div.main-body {
   display: grid;
   grid-template-columns: minmax(300px, auto) 1fr;
   grid-template-areas: "navbar mainContent";
-  grid-gap: 20px;
 }
 
 nav#navbar {
@@ -32,6 +31,15 @@ code {
   padding: 20px;
 }
 
+@media only screen and (max-width: 750px) {
+  div.main-body {
+    grid-template-columns: 1fr;
+    grid-template-areas: "navbar" " mainContent";
+  }
+  nav#navbar {
+    position: inherit;
+  }
+}
 /* @media only screen and (max-width: 815px) {
   #navbar ol {
     border: 1px solid;
