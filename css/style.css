@@ -1,0 +1,32 @@
+div.main-body {
+  display: grid;
+  grid-template-columns: minmax(300px, auto) 1fr;
+  grid-template-areas: "navbar mainContent";
+  grid-gap: 20px;
+}
+
+nav#navbar {
+  grid-area: navbar;
+  position: fixed;
+}
+
+nav#navbar a {
+  display: block;
+}
+
+main#main-doc {
+  grid-area: mainContent;
+}
+
+/* @media only screen and (max-width: 815px) {
+  #navbar ol {
+    border: 1px solid;
+    height: 207px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+} */
