@@ -12,10 +12,24 @@ nav#navbar {
 
 nav#navbar a {
   display: block;
+  padding: 5px;
+  margin: 10px 0;
+  border: 1px burlywood;
 }
 
 main#main-doc {
   grid-area: mainContent;
+}
+
+header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+code {
+  background-color: #ccc;
+  display: block;
+  padding: 20px;
 }
 
 /* @media only screen and (max-width: 815px) {
